@@ -1,0 +1,18 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.head {
+    background-image: url(div.jpg);
+    padding: 70px;
+    text-align: center;
+    color: white;
+}
+.img {
+    padding-top: 15px;
+    padding-left: 50px;
+   
+}
+

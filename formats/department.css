@@ -1,0 +1,91 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.head {
+    background-image: url(div.jpg);
+    padding: 70px;
+    text-align: center;
+    color: white;
+}
+.img {
+    padding-top: 15px;
+    padding-left: 50px;
+   
+}
+
+table{
+	border: 1px solid black;
+    width: 97%;
+    margin-block: 2rem 0rem;
+    margin-inline: auto;
+}
+
+
+th, td{
+	border: 1px solid black;
+}
+
+.author {
+    width: 90%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.author-body{
+    width: 12rem;
+}
+.title {
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
+}
+.title-body{
+    width: 15rem;
+}
+
+.type-of-publication {
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.type-of-publication-body {
+    width: 7rem;
+}
+
+.publisher {
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.publisher-body {
+    width: 7rem;
+}
+
+.isbn {
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.isbn-body {
+    width: 12rem;
+}
+
+.year-of-publication {
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.year-of-publication-body {
+    width: 5rem;
+}
+.doi {
+    width: 80%;
+    margin-inline: auto;
+}
