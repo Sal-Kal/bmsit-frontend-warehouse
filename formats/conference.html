@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="department.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <title>AIML</title>
 </head>
+
 <body>
     <img src="icon1.png" class="img" width="150" height="150" style="float: left;">
     <div class="head">
-        <center><h1>CONFERENCES</h1></center>
+        <center>
+            <h1>CONFERENCES</h1>
+        </center>
     </div>
-    
+
+    <table id="conference-table">
+        <tr>
+            <th>Author</th>
+            <th>Title</th>
+            <th>Type</th>
+            <th>Publisher</th>
+            <th>ISBN</th>
+            <th>Year</th>
+            <th>DOI</th>
+            <div id="table-data"></div>
+        </tr>
+    </table>
+    <script src="./conference.js">
+    </script>
 </body>
+
 </html>

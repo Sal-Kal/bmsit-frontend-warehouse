@@ -1,12 +1,8 @@
 console.log("here");
-
 var request = new XMLHttpRequest();
 request.open("GET", "http://localhost:8000/get/all/journal/", false);
 request.send(null);
 var object = JSON.parse(request.responseText);
-console.log("here");
-console.log(object.msg);
-console.log(object.msg.length);
 
 var rows = "";
 
@@ -19,12 +15,17 @@ for (i = 0; i < object.msg.length; i++) {
     "</td>" +
     '<td class="title-body">' +
     '<div class="title">' +
-    object.msg[i].title +
+    object.msg[i].titleOfManuscript +
     "</div>" +
     "</td>" +
     '<td class="type-of-publication-body">' +
     '<div class="type-of-publication">' +
-    object.msg[i].typeOfPublication +
+    object.msg[i].typeOfJournal +
+    "</div>" +
+    "</td>" +
+    '<td class="type-of-publication-body">' +
+    '<div class="type-of-publication">' +
+    object.msg[i].titleOfJournal +
     "</div>" +
     "</td>" +
     '<td class="publisher-body">' +
@@ -34,7 +35,7 @@ for (i = 0; i < object.msg.length; i++) {
     "</td>" +
     '<td class="isbn-body">' +
     '<div class="isbn">' +
-    object.msg[i].isbn +
+    object.msg[i].issn +
     "</div>" +
     "</td>" +
     '<td class="year-of-publication-body">' +
@@ -42,7 +43,7 @@ for (i = 0; i < object.msg.length; i++) {
     object.msg[i].yearOfPublication +
     "</div>" +
     "</td>" +
-    "<td>" +
+    '<td class="doi-body">' +
     '<div class="doi">' +
     "<a href=" +
     object.msg[i].doi +
@@ -55,7 +56,3 @@ for (i = 0; i < object.msg.length; i++) {
 
 const ele = document.getElementById("journal-table");
 ele.innerHTML += rows;
-
-// $(rows).appendTo("#journal-table tbody");
-// $(rows).appendTo("#itemList tbody");
-console.log(rows);
