@@ -50,3 +50,5 @@ for (i = 0; i < object.msg.length; i++) {
 
 const ele = document.getElementById("conference-table");
 ele.innerHTML += rows;
+// This is what I should have done instead of XMLHttpRequest(). Sal's a fucking idiot.
+// fetch("http://localhost:8000/get/all/conference/").then(res => res.json()).then(data => console.log(data.msg[0].authorName))
